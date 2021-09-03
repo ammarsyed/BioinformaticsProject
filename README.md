@@ -1,10 +1,4 @@
 # Bioinformatics Project
-Create your team:  
-
-Add the full names, email addresses, and GitHub handles for each team member (2-4 people total) to this table 
-
-Name Email GitHub 
-
 Ammar Syed asyed@ufl.edu github.com/ammarsyed 
 
 Hudhayfah Ilyas hilyas@ufl.edu github.com/hilyas1 
