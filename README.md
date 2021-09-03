@@ -1,4 +1,7 @@
 # Bioinformatics Project
+
+Team:
+
 Ammar Syed asyed@ufl.edu github.com/ammarsyed 
 
 Hudhayfah Ilyas hilyas@ufl.edu github.com/hilyas1 
