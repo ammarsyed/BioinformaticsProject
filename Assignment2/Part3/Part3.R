@@ -1,4 +1,6 @@
 library(DESeq2)
+library(ggplot2)
+library(magrittr)
 countData <- Data[-c(1)]
 dds <- DESeqDataSetFromMatrix(countData = countData, colData = colnames, design=~type)
 
@@ -28,3 +30,5 @@ volcano_plot <- EnhancedVolcano::EnhancedVolcano(
        y = "padj",
        pCutoff = 0.01
    )
+
+volcano_plot
