@@ -1,6 +1,8 @@
 library(DESeq2)
 library(ggplot2)
 library(magrittr)
+library(cluster)
+library(factoextra)
 library(ggalluvial)
 countData <- Data[-c(1)]
 dds <- DESeqDataSetFromMatrix(countData = countData, colData = colnames, design=~type)
@@ -45,3 +47,11 @@ hclust_subset100 = hclust(dist_subset100)
 hclust_subset1000 = hclust(dist_subset1000)
 hclust_subset10000 = hclust(dist_subset10000)
 
+pam_subset = pam(subset, k=5)
+
+fvizpam_subset10 = pam(subset10, k=5)
+pam_subset100 = pam(subset100, k=5)
+pam_subset1000 = pam(subset1000, k=5)
+pam_subset10000 = pam(subset10000, k=5)
+
+fviz_cluster(pam_subset10)
