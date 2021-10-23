@@ -55,3 +55,8 @@ pam_subset1000 = pam(subset1000, k=5)
 pam_subset10000 = pam(subset10000, k=5)
 
 fviz_cluster(pam_subset10)
+
+
+heatmap(data.matrix(subset), na.rm = TRUE, xlab = "Subset Data", ylab="Gene #")
+
+chisq <- chisq.test(hclust_subset$order, pam_subset$clustering)
